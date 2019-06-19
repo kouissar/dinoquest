@@ -1,1 +1,2 @@
-# dinoquest
+# dinoQuest
+A fun dinosaurs quiz game to challenge your kids knowledge about their favorite reptiles...
