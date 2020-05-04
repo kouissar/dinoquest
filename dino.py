@@ -3,6 +3,7 @@ import random
 import time
 import sys
 
+
 from colorama import init
 init(strip=not sys.stdout.isatty()) # strip colors if stdout is redirected
 from termcolor import cprint 
@@ -70,7 +71,7 @@ with open('dino.json') as json_file:
 choice = input("give a number from 0 to 4 to reveal your mystery dinosaur. [0,1,2,3 or 4]")
 print("Your mystery Dino is: " + data[int(choice)]['name'])
 choice2=input("want to learn more about " + data[int(choice)]['name'] + "?")
-print(data[int(choice)]['diet'])
-print(data[int(choice)]['era'])
-print(data[int(choice)]['regions'])
-print(data[int(choice)]['feetTall'])
+print('Diet: ' + data[int(choice)]['diet'])
+print('Era: ' + data[int(choice)]['era'])
+print('Regions: ' + data[int(choice)]['regions'])
+print('FeetTall: ' + data[int(choice)]['feetTall'])
